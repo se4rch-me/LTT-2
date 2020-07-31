@@ -1,0 +1,80 @@
+
+
+.contenedor{
+    width: 1010px;
+    height: 430px;
+    background: #00000073;
+    margin: 40px;  
+    position: relative;
+    top: -10.9px;
+    right: center;
+    left: center;
+    bottom: 0;   
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.51);
+    padding: 40px;
+}
+
+.contenedor .grid-videos{
+    display: grid;
+    grid-gap: 40px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contenedor .grid-videos .video{
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px;
+}
+
+.contenedor .grid-videos .video img{
+    width: 100%;
+    transition: all 500ms ease-out;
+
+}
+
+#capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(11,103,123,0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor .grid-videos .video:hover> #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor .grid-videos .video:hover> #capa h7{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+ 
+
+.contenedor .grid-videos .video #capa h7{
+    color: rgb(255, 255, 255);
+    transition: all 500ms ease-out;
+    font-family: Georgia;
+    margin-top: 5px;
+}
+
+.contenedor .grid-videos .video #capa p{
+    color: #fff;
+    font-family: Georgia;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+
+
+ 
+
